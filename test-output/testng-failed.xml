@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [BooksSearch]" parallel="tests">
+  <parameter name="browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="com.assignment.listener.AssignmentLogger"/>
+    <listener class-name="com.assignment.reports.CustomReporter"/>
+  </listeners>
+  <test name="ChromeTests(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.test.alation.assignment.SearchDataCatalog">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyItemAvailability"/>
+          <include name="verifyHardCoverBookMode"/>
+        </methods>
+      </class> <!-- com.test.alation.assignment.SearchDataCatalog -->
+    </classes>
+  </test> <!-- ChromeTests(failed) -->
+</suite> <!-- Failed suite [BooksSearch] -->

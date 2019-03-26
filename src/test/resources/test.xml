@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://www.testng.org/testng-1.0.dtd">
+<suite name="BooksSearch" thread-count="1" parallel="tests">
+	<listeners>
+		<listener class-name="com.assignment.listener.AssignmentLogger" />
+		<listener class-name="com.assignment.reports.CustomReporter"/>
+	</listeners>
+	<test name="ChromeTests">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="com.test.alation.assignment.SearchDataCatalog" />
+		</classes>
+	</test>
+	<!-- <test name="Firefox">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="com.test.alation.assignment.TestUrlLoad" />
+		</classes>
+	</test> -->
+</suite>

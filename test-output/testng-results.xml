@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="12" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BooksSearch" duration-ms="120714" started-at="2019-03-26T07:26:02Z" finished-at="2019-03-26T07:28:02Z">
+    <groups>
+    </groups>
+    <test name="ChromeTests" duration-ms="120714" started-at="2019-03-26T07:26:02Z" finished-at="2019-03-26T07:28:02Z">
+      <class name="com.test.alation.assignment.SearchDataCatalog">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.test.alation.assignment.SearchDataCatalog@5cb9f472]" name="setUp" is-config="true" duration-ms="9290" started-at="2019-03-26T12:56:02Z" finished-at="2019-03-26T12:56:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="openAmazon()[pri:0, instance:com.test.alation.assignment.SearchDataCatalog@5cb9f472]" name="openAmazon" duration-ms="22058" started-at="2019-03-26T12:56:11Z" finished-at="2019-03-26T12:56:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAmazon -->
+        <test-method status="PASS" signature="selectBooksCategory()[pri:0, instance:com.test.alation.assignment.SearchDataCatalog@5cb9f472]" name="selectBooksCategory" duration-ms="7423" started-at="2019-03-26T12:56:33Z" finished-at="2019-03-26T12:56:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBooksCategory -->
+        <test-method status="PASS" signature="searchForDataCatalog()[pri:0, instance:com.test.alation.assignment.SearchDataCatalog@5cb9f472]" name="searchForDataCatalog" duration-ms="17818" started-at="2019-03-26T12:56:40Z" finished-at="2019-03-26T12:56:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForDataCatalog -->
+        <test-method status="PASS" signature="verifyFirstSearchedResult()[pri:0, instance:com.test.alation.assignment.SearchDataCatalog@5cb9f472]" name="verifyFirstSearchedResult" duration-ms="1842" started-at="2019-03-26T12:56:58Z" finished-at="2019-03-26T12:57:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFirstSearchedResult -->
+        <test-method status="PASS" signature="verifyKindleBookMode()[pri:0, instance:com.test.alation.assignment.SearchDataCatalog@5cb9f472]" name="verifyKindleBookMode" duration-ms="238" started-at="2019-03-26T12:57:00Z" finished-at="2019-03-26T12:57:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyKindleBookMode -->
+        <test-method status="PASS" signature="verifyPaperBackBookMode()[pri:0, instance:com.test.alation.assignment.SearchDataCatalog@5cb9f472]" name="verifyPaperBackBookMode" duration-ms="72" started-at="2019-03-26T12:57:00Z" finished-at="2019-03-26T12:57:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaperBackBookMode -->
+        <test-method status="FAIL" signature="verifyHardCoverBookMode()[pri:0, instance:com.test.alation.assignment.SearchDataCatalog@5cb9f472]" name="verifyHardCoverBookMode" duration-ms="30252" started-at="2019-03-26T12:57:00Z" finished-at="2019-03-26T12:57:31Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-index='0']//a[contains(text(),'Hardcover')]"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FJH7FLG', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\Perumal\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62980}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: ae5d1a7abfc4961c30ec9b7c299611f8
+*** Element info: {Using=xpath, value=//div[@data-index='0']//a[contains(text(),'Hardcover')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-index='0']//a[contains(text(),'Hardcover')]"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FJH7FLG', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\Perumal\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62980}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: ae5d1a7abfc4961c30ec9b7c299611f8
+*** Element info: {Using=xpath, value=//div[@data-index='0']//a[contains(text(),'Hardcover')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at com.assignment.amazon.page.home.AmazonHomePage.isHardCoverLinkPresent(AmazonHomePage.java:110)
+	at com.test.alation.assignment.SearchDataCatalog.verifyHardCoverBookMode(SearchDataCatalog.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHardCoverBookMode -->
+        <test-method status="PASS" signature="verifyRatingReviewers()[pri:0, instance:com.test.alation.assignment.SearchDataCatalog@5cb9f472]" name="verifyRatingReviewers" duration-ms="131" started-at="2019-03-26T12:57:31Z" finished-at="2019-03-26T12:57:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRatingReviewers -->
+        <test-method status="PASS" signature="verifyCurrencySymbolUSD()[pri:0, instance:com.test.alation.assignment.SearchDataCatalog@5cb9f472]" name="verifyCurrencySymbolUSD" duration-ms="88" started-at="2019-03-26T12:57:31Z" finished-at="2019-03-26T12:57:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCurrencySymbolUSD -->
+        <test-method status="PASS" signature="verifyPriceIsNumericValue()[pri:0, instance:com.test.alation.assignment.SearchDataCatalog@5cb9f472]" name="verifyPriceIsNumericValue" duration-ms="73" started-at="2019-03-26T12:57:31Z" finished-at="2019-03-26T12:57:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPriceIsNumericValue -->
+        <test-method status="FAIL" signature="verifyItemAvailability()[pri:0, instance:com.test.alation.assignment.SearchDataCatalog@5cb9f472]" name="verifyItemAvailability" duration-ms="30027" started-at="2019-03-26T12:57:31Z" finished-at="2019-03-26T12:58:01Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-index='0']//span[contains(@aria-label,'out of stock')]"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FJH7FLG', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\Perumal\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62980}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: ae5d1a7abfc4961c30ec9b7c299611f8
+*** Element info: {Using=xpath, value=//div[@data-index='0']//span[contains(@aria-label,'out of stock')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-index='0']//span[contains(@aria-label,'out of stock')]"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FJH7FLG', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\Perumal\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62980}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: ae5d1a7abfc4961c30ec9b7c299611f8
+*** Element info: {Using=xpath, value=//div[@data-index='0']//span[contains(@aria-label,'out of stock')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+	at com.assignment.amazon.page.home.AmazonHomePage.isItemOutOfStock(AmazonHomePage.java:148)
+	at com.test.alation.assignment.SearchDataCatalog.verifyItemAvailability(SearchDataCatalog.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyItemAvailability -->
+        <test-method status="PASS" signature="verifyItemDeliveryDate()[pri:0, instance:com.test.alation.assignment.SearchDataCatalog@5cb9f472]" name="verifyItemDeliveryDate" duration-ms="99" started-at="2019-03-26T12:58:01Z" finished-at="2019-03-26T12:58:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyItemDeliveryDate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.alation.assignment.SearchDataCatalog@5cb9f472]" name="tearDown" is-config="true" duration-ms="1237" started-at="2019-03-26T12:58:01Z" finished-at="2019-03-26T12:58:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.alation.assignment.SearchDataCatalog -->
+    </test> <!-- ChromeTests -->
+  </suite> <!-- BooksSearch -->
+</testng-results>
