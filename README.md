@@ -4,7 +4,7 @@
 Automation using webdriver Java TestNg MVN for the given assignment of Testing the Search data catalog book type serach in amazon.com for the first search result
 
 Java TestNg mvn as my choice for the framework with my prior expertise on those areas.
-
+https://github.com/murugakpk/AlationAssignment/blob/master/doc/index.html for documentation
 Scripts are written generic to run on both Firefox and Chrome but having some own laptop specific issues unable to execute in Firefox.
 Attaching the Chrome execution report in the git hub
 
